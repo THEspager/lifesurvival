@@ -6,10 +6,10 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 
-const geometry = new THREE.CircelGeometry();
+const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshBasicMaterial( { color: 0xff0505 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+const ball = new THREE.Mesh( geometry, material );
+scene.add( ball );
 
 camera.position.z = 5;
 
@@ -18,6 +18,9 @@ function animate() {
 
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
+    MouseEvent.cube.BoxGeometry();
+    MouseEvent.setSize(400, 500);
+    MouseEvent.set(rotation.x, rotation.y);
 
 	renderer.render( scene, camera );
 }
